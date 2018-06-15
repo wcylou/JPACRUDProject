@@ -20,9 +20,23 @@
 <title>Player Details</title>
 </head>
 <body>
-<div class = "container">
-  <p>${player.firstName}<p>
-  <p>${player.lastName}</p>
-</div>
+	<div class="container">
+<span class = "headings">Player ID: </span><c:out value="${player.id}" /><br>
+<span class = "headings">First Name: </span><c:out value="${player.firstName}" /><br>
+<span class = "headings">Last Name: </span><c:out value="${player.lastName}" /><br>
+<span class = "headings">Team: </span><c:out value="${player.team}" /><br>
+<span class = "headings">DOB: </span><c:out value="${player.dateOfBirth}" /><br>
+<span class = "headings">Shirt Number: </span><c:out value="${player.shirtNumber}" /><br>
+<span class = "headings">Position: </span><c:out value="${player.position}" /><br>
+	</div>
+
+	<form:form action="updatePlayer.do" method="GET">
+		<input type="hidden" name="playerId" value="${player.id}" />
+		<input type="submit" value="Update" />
+	</form:form>
+	<form:form action="deletePlayer.do" method="GET">
+		<input type="hidden" name="playerId" value="${player.id}" />
+		<input type="submit" value="Delete" />
+		</form:form>
 </body>
 </html>

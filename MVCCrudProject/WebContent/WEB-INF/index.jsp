@@ -20,11 +20,15 @@
 </head>
 <body>
 	<div>
-	hello
+		hello
 		<form action="playerDetails.do" method="GET">
 			<input type="text" name="playerId" /> <input type="submit"
 				value="Find Player" />
 		</form>
+		<form action="addPlayer.do" method="POST">
+			Add Player <input type="submit" value="Add Player" />
+		</form>
+	
 
 		<%-- <c:forEach items="${films}" var="film">
 			<td>Film ID: </span> <c:out value="${film.id}" /></td>
