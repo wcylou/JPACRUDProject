@@ -20,7 +20,7 @@
 </head>
 <body>
 <div class = "container">
-	<form:form action="addPlayer.do" method="POST" modelAttribute="player">
+	<form:form action="addPlayerDetails.do" method="POST" modelAttribute="player">
 		<form:label path="firstName">First Name</form:label>
 		<form:input path="firstName" />
 		<form:errors path="firstName" />
@@ -32,6 +32,10 @@
 		<form:label path="team">Team:</form:label>
 		<form:input path="team" />
 		<form:errors path="team" />
+		<br />
+		<form:label path="age">Age:</form:label>
+		<form:input path="age" />
+		<form:errors path="age" />
 		<br />
 		<form:label path="shirtNumber">Shirt Number</form:label>
 		<form:input path="shirtNumber" />

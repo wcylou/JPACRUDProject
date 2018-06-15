@@ -25,7 +25,7 @@
 <span class = "headings">First Name: </span><c:out value="${player.firstName}" /><br>
 <span class = "headings">Last Name: </span><c:out value="${player.lastName}" /><br>
 <span class = "headings">Team: </span><c:out value="${player.team}" /><br>
-<span class = "headings">DOB: </span><c:out value="${player.dateOfBirth}" /><br>
+<span class = "headings">Age: </span><c:out value="${player.age}" /><br>
 <span class = "headings">Shirt Number: </span><c:out value="${player.shirtNumber}" /><br>
 <span class = "headings">Position: </span><c:out value="${player.position}" /><br>
 	</div>

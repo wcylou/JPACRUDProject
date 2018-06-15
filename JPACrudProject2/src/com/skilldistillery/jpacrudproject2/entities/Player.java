@@ -15,9 +15,7 @@ public class Player {
 	@Column(name = "last_name")
 	private String lastName;
 	private String team;
-	@Column(name = "date_of_birth")
-	@Temporal(TemporalType.DATE)
-	private Date dateOfBirth;
+	private int age;
 	@Column(name = "shirt_number")
 	private int shirtNumber;
 	@Enumerated(EnumType.STRING)
@@ -47,12 +45,12 @@ public class Player {
 		this.team = team;
 	}
 
-	public Date getDateOfBirth() {
-		return dateOfBirth;
+	public int getAge() {
+		return age;
 	}
 
-	public void setDateOfBirth(Date dateOfBirth) {
-		this.dateOfBirth = dateOfBirth;
+	public void setAge(int age) {
+		this.age = age;
 	}
 
 	public int getShirtNumber() {
@@ -77,8 +75,8 @@ public class Player {
 
 	@Override
 	public String toString() {
-		return "Player [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", team=" + team
-				+ ", dateOfBirth=" + dateOfBirth + ", shirtNumber=" + shirtNumber + ", position=" + position + "]";
+		return "Player [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", team=" + team + ", age="
+				+ age + ", shirtNumber=" + shirtNumber + ", position=" + position + "]";
 	}
 
 }

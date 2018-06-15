@@ -63,10 +63,18 @@ public class PlayerController {
 	    }
 	    
 
-	@RequestMapping(path = "addPlayer.do", method = RequestMethod.POST)
+	@RequestMapping(path = "addPlayer.do", method = RequestMethod.GET)
 	public ModelAndView addPlayer(Player player) {
 		ModelAndView mv = new ModelAndView();
-		playerDAO.create(player);
+		mv.setViewName("WEB-INF/addplayer.jsp"); // redirect to new mapping
+		return mv;
+	}
+	
+	@RequestMapping(path = "addPlayerDetails.do", method = RequestMethod.POST)
+	public ModelAndView addPlayerDetails(Player player) {
+		ModelAndView mv = new ModelAndView();
+		Player playerAdded = playerDAO.create(player);
+		mv.addObject("player", playerAdded);
 		mv.setViewName("WEB-INF/playerdetails.jsp"); // redirect to new mapping
 		return mv;
 	}

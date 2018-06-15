@@ -21,8 +21,8 @@
        <span class = "headings">Player ID: </span><input type= "text" name="playerId" value="${playerupdate.id}" readonly/><br>
         <span class = "headings">First Name:</span> <input type="text" type="text" name = "firstName" value="${playerupdate.firstName}"/> <br> 
         <span class = "headings">Last Name: </span> <input type="text" name = "lastName" type="text" value="${playerupdate.lastName}" /><br> 
-<%--         <span class = "headings">DOB: </span><input type="text" name="dateOfBirth" value="${playerupdate.dateOfBirth}"/><br> 
- --%>        <span class = "headings">Team: </span> <input type="text" name="team" value="${playerupdate.team}"/><br> 
+       <span class = "headings">Age: </span><input type="text" name="age" value="${playerupdate.age}"/><br> 
+      <span class = "headings">Team: </span> <input type="text" name="team" value="${playerupdate.team}"/><br> 
        	<span class = "headings">Shirt Number </span>  <input type="text" name="shirtNumber" value="${playerupdate.shirtNumber}"/><br> 
          <span class = "headings">Position: </span>  
        Goalkeeper<input type="radio" name="position" value="Goalkeeper" <c:if test="${playerupdate.position == 'Goalkeeper'}">CHECKED</c:if> />

@@ -25,7 +25,7 @@
 			<input type="text" name="playerId" /> <input type="submit"
 				value="Find Player" />
 		</form>
-		<form action="addPlayer.do" method="POST">
+		<form action="addPlayer.do" method="GET">
 			Add Player <input type="submit" value="Add Player" />
 		</form>
 	

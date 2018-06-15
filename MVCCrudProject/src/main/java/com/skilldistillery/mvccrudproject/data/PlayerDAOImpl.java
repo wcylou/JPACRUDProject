@@ -34,7 +34,7 @@ public class PlayerDAOImpl implements PlayerDAO {
 		Player managed = em.find(Player.class, id);
 		managed.setFirstName(player.getFirstName());
 		managed.setLastName(player.getLastName());
-		managed.setDateOfBirth(player.getDateOfBirth());
+		managed.setAge(player.getAge());
 		managed.setTeam(player.getTeam());
 		managed.setShirtNumber(player.getShirtNumber());
 		managed.setPosition(player.getPosition());
