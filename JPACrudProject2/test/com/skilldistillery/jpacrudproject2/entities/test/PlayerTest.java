@@ -50,5 +50,4 @@ public class PlayerTest {
 		assertEquals("England", p.getTeam());
 		assertEquals(24, p.getAge());
 	}
-
 }

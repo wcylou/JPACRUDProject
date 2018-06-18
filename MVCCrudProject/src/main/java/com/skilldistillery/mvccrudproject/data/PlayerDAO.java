@@ -14,6 +14,6 @@ public interface PlayerDAO {
 	public List<Player> getStrikers();
 	public List<Player> getMidfielders();
 	public List<Player> getDefenders();
-	Player getNextPlayer(Player player);
-	Player getPreviousPlayer(Player player);
+	public Player getNextPlayer(Player player);
+	public Player getPreviousPlayer(Player player);
 }
