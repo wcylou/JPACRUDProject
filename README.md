@@ -21,7 +21,7 @@
 - When all players are listed, they are able to search by keywords which will automatically filter the entire results list.
 - Team selector allows the user to enter a custom team name and choose players for all the different positions within a 4-4-2 formation. After players are selected, the team is displayed in a visual format of the players on a football pitch.
 
-### Challenges and Lessons Learned
+### Challenges and Lessons Learnt
 **1. Configuration**
 - As this project was built from scratch, configuring JPA, Gradle and the database proved tricky especially the Gradle build which needed to incorporate Hibernate.
 
