@@ -1,5 +1,7 @@
 ## Week 8 Football Player CRUD Project
 
+http://18.219.168.192:8080/MVCCrudProject/
+
 ### Overview
 - Project involving creating web applications using Spring MVC and SQL tables to perform CRUD actions on a football player database which was created from scratch.
 
